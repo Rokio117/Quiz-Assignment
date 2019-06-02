@@ -1,9 +1,18 @@
+html {
+  background-image: url(https://wallpaper-gallery.net/images/classic-music-wallpaper/classic-music-wallpaper-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 body {
   display:flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   
+}
+main {
+  padding: 10px;
 }
 header {
   font-size: 100px;
@@ -15,11 +24,12 @@ header {
   box-sizing: border-box;
   width: 25%;
   height: 60px;
-  background-color: burlywood;
+  
   margin: 10px;
   border: 5px solid black;
-  
-
+}
+#question-num-display,#score-num-display {
+  font-size: 20px;
 }
 #reset-and-num-display {
   display:flex;
@@ -29,9 +39,12 @@ header {
   font-size: 40px;
   margin: 20px;
 }
+#intro-greeting {
+  
+  height: 300px;
+}
 #intro-greeting,#main-interactive-area {
-  background-color: burlywood;
-  width: 85%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,3 +56,40 @@ header {
 button {
   font-size: 40px;
 }
+#answer-area {
+display: flex;
+height:80%;
+width: 100%;
+align-items: stretch;
+}
+#question-block {
+display: flex;
+width: 100%;
+flex-direction: column;
+justify-content: space-between;
+text-align: start;
+border: none;
+
+}
+.question {
+  display: flex;
+  justify-content: center;
+
+}
+#main-interactive-area {
+  height: auto;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.question-submit {
+  align-self: center;
+}
+.answer {
+  font-size: 40px;
+}
+button:hover, input:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
