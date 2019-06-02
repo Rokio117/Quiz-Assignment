@@ -13,6 +13,7 @@ body {
 }
 main {
   padding: 10px;
+  height: 1000px;
 }
 header {
   font-size: 100px;
@@ -20,14 +21,15 @@ header {
   justify-content: center;
   margin: 20px; 
 }
-#reset-button,#number-display {
+#reset-button,#number-display{
   box-sizing: border-box;
-  width: 25%;
+  width: auto;
   height: 60px;
-  
   margin: 10px;
   border: 5px solid black;
+  padding: 5px;
 }
+
 #question-num-display,#score-num-display {
   font-size: 20px;
 }
@@ -40,18 +42,19 @@ header {
   margin: 20px;
 }
 #intro-greeting {
-  
-  height: 300px;
+  height: 75%;
 }
 #intro-greeting,#main-interactive-area {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-#begin-button {
+
+#begin-button,.question-submit {
   margin:15px;
-  width: 60%;
-  
+  font-size: 40px;
+  border: 5px solid black;
+  padding: 20px;
 }
 button {
   font-size: 40px;
@@ -76,11 +79,16 @@ border: none;
   justify-content: center;
 
 }
-#main-interactive-area {
+#main-interacStive-area,#feedback {
   height: auto;
   display: flex;
   margin-top: 10px;
   flex-direction: column;
+}
+#feedback {
+  font-size: 40px;
+  margin:30px;
+
 }
 .question-submit {
   align-self: center;
