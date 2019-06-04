@@ -5,7 +5,7 @@ function resetButton() {
 
 function insertQuestionText() {
   console.log('insertQuestionText ran');
-  //inputs the current question into the 'question _ of 10 span
+  //inputs the current question number into the 'question _ of 10 span
 }
 
 function updateScore() {
