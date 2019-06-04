@@ -1,14 +1,15 @@
-<!DOCTYPE html lang="eng">
-<html>
+<!DOCTYPE html>
+<html lang="eng">
   <head>
-    <link rel="stylesheet" href="index.css">
+    
     <title>Nick Hillary's Quiz Assignment Page 2</title>
-    <meta name = "viewport" content = "width=divice-width">
+    <meta name="viewport" content="width=device-width">
     <meta name = "description" content = "Test your knolwedge of music throughout the ages.">
+    <link rel="stylesheet" href="wire-frame.css">
   </head>
   <body>
     <main>
-        <header>Music Quiz</header>
+      <header>Music Quiz</header>
       <div id = "reset-and-num-display">
         <button id = "reset-button" type="button">Reset</button>
         <div id= "number-display">
@@ -16,6 +17,9 @@
           <div id = "score-num-display">Score:<span id="span-score"></span>/10</div>
         </div>
       </div>
-      <section id = "feedback">Congratulations! Your score is <span id="final-score"></span> of 10</section>
-      <a href="index.html" id ="begin-button" >Play Again?</a>
+      <section id = "feedback" class = "medium-font">Congratulations! Your score is <span id="final-score"></span> of 10</section>
+      <a href="index.html" id ="begin-button" class = "medium-font" >Play Again?</a>
     </main>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="questions.js"></script>
+  </body>

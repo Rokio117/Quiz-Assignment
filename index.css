@@ -17,9 +17,10 @@ main {
 }
 header {
   font-size: 100px;
-  display: flex;
-  justify-content: center;
-  margin: 20px; 
+}
+#reset-and-num-display {
+  display:flex;
+  justify-content: space-around;
 }
 #reset-button,#number-display{
   box-sizing: border-box;
@@ -33,12 +34,8 @@ header {
 #question-num-display,#score-num-display {
   font-size: 20px;
 }
-#reset-and-num-display {
-  display:flex;
-  justify-content: space-around;
-}
-#intro-quote {
-  font-size: 40px;
+
+#intro-quote,header {
   margin: 20px;
 }
 #intro-greeting {
@@ -52,32 +49,23 @@ header {
 
 #begin-button,.question-submit {
   margin:15px;
-  font-size: 40px;
   border: 5px solid black;
   padding: 20px;
 }
-button {
-  font-size: 40px;
-}
+
 #answer-area {
 display: flex;
 height:80%;
-width: 100%;
-align-items: stretch;
 }
 #question-block {
 display: flex;
 width: 100%;
-flex-direction: column;
-justify-content: space-between;
 text-align: start;
 border: none;
 
 }
 .question {
-  display: flex;
   justify-content: center;
-
 }
 #main-interacStive-area,#feedback {
   height: auto;
@@ -86,18 +74,16 @@ border: none;
   flex-direction: column;
 }
 #feedback {
-  font-size: 40px;
   margin:30px;
-
 }
 .question-submit {
   align-self: center;
 }
-.answer {
-  font-size: 40px;
-}
-button:hover, input:hover {
+button:hover, input:hover, a:hover {
   cursor: pointer;
   background-color: green;
+}
+.medium-font,.answer,button {
+  font-size: 40px;
 }
 

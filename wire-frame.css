@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+}
+header {
+  font-size: 100px;
+}
+#question-block {
+  display: flex;
+  flex-direction: column;
+  text-align: left
+}
+#reset-and-num-display {
+  display: flex;
+  justify-content: space-around;
+}
+#intro-picture {
+  width: 100%;
+}
