@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="wire-frame.css">
   </head>
   <body>
+    <header>Music Quiz</header>
     <main>
-      <header>Music Quiz</header>
-      <div id = "reset-and-num-display">
-        <button id = "reset-button" type="button">Reset</button>
+      <section id="page-4">
         <div id= "number-display">
           <div id = "question-num-display">Question <span id="question-num">of 10</span></div>
           <div id = "score-num-display">Score:<span id="span-score"></span>/10</div>
         </div>
-      </div>
       <section id = "feedback" class = "medium-font">Congratulations! Your score is <span id="final-score"></span> of 10</section>
-      <a href="index.html" id ="begin-button" class = "medium-font" >Play Again?</a>
+      <button type="button" id ="begin-button" class = "medium-font" >Play Again?</button>
+      </section>
     </main>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="index.js"></script>
   <script type="text/javascript" src="questions.js"></script>
   </body>

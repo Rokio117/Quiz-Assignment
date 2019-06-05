@@ -9,10 +9,13 @@ header {
   flex-direction: column;
   text-align: left
 }
-#reset-and-num-display {
+#number-display {
   display: flex;
   justify-content: space-around;
 }
 #intro-picture {
   width: 100%;
+}
+.hidden {
+  display: none;
 }

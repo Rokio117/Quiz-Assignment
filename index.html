@@ -9,20 +9,70 @@
    <body>
      <header>Music Quiz</header>
        <main>
-         </div>
-           <div id="intro-greeting">
-             <p id = "intro-quote" class = "medium-font">Ready To Test Your Musical Knowledge?</p>
-             <img id = "intro-picture" src="https://res.cloudinary.com/teepublic/image/private/s--iZULBGhW--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1528291189/production/designs/2761365_0.jpg" alt ="I'll Handel This">
+          <section id="page-1">
+            <div id="intro-greeting">
+              <p id = "intro-quote" class = "medium-font">Ready To Test Your Musical Knowledge?</p>
+              <img id = "intro-picture" src="https://res.cloudinary.com/teepublic/image/private/s--iZULBGhW--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1528291189/production/designs/2761365_0.jpg" alt ="I'll Handel This">
             </img>
-           </div>
-          <a href="page2.html" id ="begin-button" class = "medium-font">Let's Go!</a>
-        </main>
-        <script
-          src="https://code.jquery.com/jquery-3.4.1.min.js"
-          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-          crossorigin="anonymous"></script>
-        <script type="text/javascript" src="index.js"></script>
-        <script type="text/javascript" src="questions.js"></script>
+            </div>
+            <button type="submit" id ="begin-button" class = "medium-font">Let's Go!</a>
+          </section>
+
+          <section id="page-2" class="hidden">
+              <div id= "number-display">
+                <div id = "question-num-display">Question <span class="question-num"></span> of 10</div>
+                <div id = "score-num-display">Score:<span id="span-score"></span>/10</div>
+              </div>
+              
+            <div id ="main-interactive-area">
+              <h2 class="question">First Question Filler</h2>
+              <form id = "answer-area">
+                <fieldset id ="question-block">
+                  <label class ="answer">
+                    <input type="radio" required>
+                    <span>answer 1 Filler</span>
+                  </label>
+      
+                  <label class ="answer">
+                    <input type="radio" required>
+                    <span>answer 2 Filler</span>
+                </label>
+      
+                  <label class ="answer">
+                      <input type="radio" required>
+                      <span>answer 3 Filler</span>
+                    </label>
+      
+                  <label class ="answer">
+                      <input type="radio" required>
+                      <span>answer 4 Filler</span>
+                  </label>
+                </fieldset>
+              </form>
+              <button type="button" class = "question-submit medium-font">Submit</a>
+            </div>
+          </section>
+
+          <section id="page-3" class="hidden">
+            <div id= "number-display">
+              <div id = "question-num-display">Question <span class="question-num"></span> of 10</div>
+              <div id = "score-num-display">Score:<span id="span-score"></span>/10</div>
+            </div>
+            <section id = "feedback" class = "medium-font">Congratulations! You chose the correct answer!</section>
+            <button type="button" id ="continue-button" class = "medium-font">Continue</button>
+          </section>
+
+          <section id="page-4" class="hidden">
+            <section id = "feedback" class = "medium-font">Congratulations! Your score is <span id="final-score"></span> of 10</section>
+            <button type="button" id ="play-again-button" class = "medium-font" >Play Again?</button>
+            </section>
+      </main>
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript" src="questions.js"></script>
        
     </body>
    
