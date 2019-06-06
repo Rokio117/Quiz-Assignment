@@ -60,19 +60,16 @@ function showAnswers() {
 }
 
 function handleSubmitAnswer() {
-  $('.question-submit').submit(function(event) {
+  console.log('handleSubmitAnswer ran');
+  $('.question-submit').on(function(event) {
     event.preventDefault();
     $('#page-2').toggleClass("hidden");
     $('#page-3').toggleClass("hidden");
-    console.log('submitAnswer ran');
   })
-  
-  //updates user score on page and in object array
-  //generates appropriate text for next page depending on user answer
-  //sends user to result page
 }
+
 function handleinCorrectAnswer() {
-  //Changes text in 
+  //Changes text in feedback page to show what the correct answer was
   console.log('handleinCorrectAnswer Ran')
 }
 function handleRestartQuiz() {
