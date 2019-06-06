@@ -20,33 +20,29 @@
 
           <section id="page-2" class="hidden">
               <div id= "number-display">
-                <div id = "question-num-display">Question <span class="question-num"></span> of 10</div>
-                <div id = "score-num-display">Score:<span id="span-score"></span>/10</div>
+                <div id = "question-num-display">Question <span class="question-num"></span> of <span class="number-of-questions"></span></div>
+                <div id = "score-num-display">Score:<span id="span-score"></span> of <span class="number-of-questions"></span></div>
               </div>
               
             <div id ="main-interactive-area">
               <h2 class="question">First Question Filler</h2>
               <form id = "answer-area">
                 <fieldset id ="question-block">
-                  <label class ="answer">
-                    <input type="radio" required>
-                    <span>answer 1 Filler</span>
-                  </label>
+                  
+                    <input type="radio">
+                    <label for = "answer-A" class ="answer"><span id="answer-A">answer 1 Filler</span></label>
       
-                  <label class ="answer">
-                    <input type="radio" required>
-                    <span>answer 2 Filler</span>
-                </label>
+                  
+                    <input type="radio">
+                    <label for = "answer-B" class ="answer"><span id="answer-B">answer 2 Filler</span></label>
       
-                  <label class ="answer">
-                      <input type="radio" required>
-                      <span>answer 3 Filler</span>
-                    </label>
+                  
+                    <input type="radio">
+                    <label for = "answer-C" class ="answer"><span id="answer-C">answer 3 Filler</span></label>
       
-                  <label class ="answer">
-                      <input type="radio" required>
-                      <span>answer 4 Filler</span>
-                  </label>
+                  
+                    <input type="radio">
+                    <label for = "answer-D" class ="answer"><span id="answer-D">answer 4 Filler</span></label>
                 </fieldset>
               </form>
               <button type="button" class = "question-submit medium-font">Submit</a>

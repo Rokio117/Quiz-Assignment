@@ -1,21 +1,26 @@
 let currentQuestion = 1
-
+let arrayNum = currentQuestion - 1
+console.log(arrayNum);
 function handleLetsGo() {
   $('#begin-button').click(function(event) {
     event.preventDefault();
     console.log('handleLetsGo Ran');
     $('#page-1').toggleClass("hidden");
     $('#page-2').toggleClass("hidden");
+    showQuestion();
+    showAnswers();
   })
   
 }
 function handleContinue() {
   $('#continue-button').click(function(event){
     currentQuestion++
+    arrayNum++
     console.log(currentQuestion);
+    console.log(arrayNum);
     event.preventDefault();
     console.log('handleContinue Ran');
-    if (currentQuestion <= 10) {
+    if (currentQuestion <= STORE.length) {
       $('#page-3').toggleClass("hidden");
       $('#page-2').toggleClass("hidden");
       }
@@ -24,11 +29,14 @@ function handleContinue() {
       $('#page-4').toggleClass("hidden");
     }
     showQuestionNumber();
-  })
+    showQuestion();
+    showAnswers();
+  })  
 }
 
 function showQuestionNumber() {
   console.log('showQuestionNumber ran');
+  $('.number-of-questions').text(STORE.length)
   $('.question-num').text(currentQuestion)
   //inputs the current question number into the 'question _ of 10 span
 }
@@ -40,12 +48,15 @@ function updateScore() {
 
 function showQuestion() {
   console.log('showQuestion ran');
-  //updates the text of question to the one the user should be on
+  $('.question').text(STORE[arrayNum].question);
 }
 
 function showAnswers() {
   console.log('showAnswers ran');
-  //updates the text of each answer to fit the question the user is currently on
+  $('#answer-A').text(STORE[arrayNum].answers.A)
+  $('#answer-B').text(STORE[arrayNum].answers.B)
+  $('#answer-C').text(STORE[arrayNum].answers.C)
+  $('#answer-D').text(STORE[arrayNum].answers.D)
 }
 
 function handleSubmitAnswer() {

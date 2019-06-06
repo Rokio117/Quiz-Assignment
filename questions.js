@@ -102,7 +102,7 @@ const STORE = [
   {
     number: 10,
     question:
-      "Which one of these instruments was used primarily in the band “Jethro Tull”?",
+      "Which one of these instruments was used primarily in the band Jethro Tull?",
     answers: {
       A: "Clarinet",
       B: "Chainsaw",
