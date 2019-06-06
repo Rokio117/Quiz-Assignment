@@ -60,25 +60,21 @@ function showAnswers() {
 }
 
 function handleSubmitAnswer() {
-  $('.question-submit').click(function(event) {
-    console.log('submitAnswer ran');
+  $('.question-submit').submit(function(event) {
     event.preventDefault();
     $('#page-2').toggleClass("hidden");
     $('#page-3').toggleClass("hidden");
+    console.log('submitAnswer ran');
   })
   
   //updates user score on page and in object array
   //generates appropriate text for next page depending on user answer
   //sends user to result page
 }
-
-function showNextQuestion() {
-  console.log('showNextQuestion ran');
-  //Sets question and answer text for the next page? (or do we want submitAnswer to do this?
-  //sends user to next question page
-  //if question 10, sends user to final score page
+function handleinCorrectAnswer() {
+  //Changes text in 
+  console.log('handleinCorrectAnswer Ran')
 }
-
 function handleRestartQuiz() {
   $('#play-again-button').click(function(event){
     console.log('resetQuiz ran');
