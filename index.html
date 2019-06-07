@@ -21,7 +21,7 @@
           <section id="page-2" class="hidden">
               <div id= "number-display">
                 <div id = "question-num-display">Question <span class="question-num"></span> of <span class="number-of-questions"></span></div>
-                <div id = "score-num-display">Score:<span id="span-score"></span> of <span class="number-of-questions"></span></div>
+                <div id = "score-num-display">Score:<span class="user-score"></span> of <span class="number-of-questions"></span></div>
               </div>
               
             <div id ="main-interactive-area">
@@ -29,22 +29,22 @@
               <form id = "answer-area">
                 <fieldset id ="question-block">
                   
-                    <input type="radio" name="question-name" required>
+                    <input type="radio" name="question-name" class="answer-A-value" value="" required >
                     <label for = "answer-A" class ="answer"><span id="answer-A">answer 1 Filler</span></label>
       
                   
-                    <input type="radio" name="question-name">
+                    <input type="radio" name="question-name" class="answer-B-value" value="">
                     <label for = "answer-B" class ="answer"><span id="answer-B">answer 2 Filler</span></label>
       
                   
-                    <input type="radio" name="question-name">
+                    <input type="radio" name="question-name" class="answer-C-value" value="" >
                     <label for = "answer-C" class ="answer"><span id="answer-C">answer 3 Filler</span></label>
       
                   
-                    <input type="radio" name="question-name">
+                    <input type="radio" name="question-name" class="answer-D-value" value="">
                     <label for = "answer-D" class ="answer"><span id="answer-D">answer 4 Filler</span></label>
                 </fieldset>
-                <button type="submit" class = "question-submit medium-font">Submit</button>
+                <button type="submit" id = "question-submit" class = "question-submit medium-font">Submit</button>
               </form>
               
             </div>
@@ -52,15 +52,15 @@
 
           <section id="page-3" class="hidden">
             <div id= "number-display">
-              <div id = "question-num-display">Question <span class="question-num"></span> of 10</div>
-              <div id = "score-num-display">Score:<span id="span-score"></span>/10</div>
+              <div id = "question-num-display">Question <span class="question-num"></span> of <span class="number-of-questions"></span></div>
+              <div id = "score-num-display">Score:<span class="user-score"></span> of <span class="number-of-questions"></span></div>
             </div>
             <section id = "feedback" class = "medium-font">Congratulations! You chose the correct answer!</section>
             <button type="button" id ="continue-button" class = "medium-font">Continue</button>
           </section>
 
           <section id="page-4" class="hidden">
-            <section id = "feedback" class = "medium-font">Congratulations! Your score is <span id="final-score"></span> of 10</section>
+            <section id = "feedback" class = "medium-font">Congratulations! Your score is <span id="final-score"></span> of <span class="number-of-questions"></span></section>
             <button type="button" id ="play-again-button" class = "medium-font" >Play Again?</button>
             </section>
       </main>
@@ -68,8 +68,9 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
-      <script type="text/javascript" src="index.js"></script>
       <script type="text/javascript" src="questions.js"></script>
+      <script type="text/javascript" src="index.js"></script>
+      
        
     </body>
    

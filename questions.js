@@ -8,7 +8,7 @@ const STORE = [
       C: "Keyboard, Valve, Key, Contact",
       D: "Big, Small, Medium, over-easy"
     },
-    correct: "A"
+    correct: "Woodwinds, Strings, Brass, Percussion"
   },
   {
     number: 2,
@@ -20,7 +20,7 @@ const STORE = [
       C: "Viola",
       D: "Bassoon"
     },
-    correct: "D"
+    correct: "Bassoon"
   },
   {
     number: 3,
@@ -31,7 +31,7 @@ const STORE = [
       C: "Soprano, Alto, Tenor, Bass",
       D: "High, Low, Medium-High, Medium-Low"
     },
-    correct: "C"
+    correct: "Soprano, Alto, Tenor, Bass"
   },
   {
     number: 4,
@@ -42,7 +42,7 @@ const STORE = [
       C: "Mezzo-soprano",
       D: "Soprano"
     },
-    correct: "D"
+    correct: "Soprano"
   },
   {
     number: 3,
@@ -53,7 +53,7 @@ const STORE = [
       C: "Dynamics",
       D: "Transposing"
     },
-    correct: "C"
+    correct: "Dynamics"
   },
   {
     number: 6,
@@ -64,7 +64,7 @@ const STORE = [
       C: "Follemente",
       D: "Ritardando"
     },
-    correct: "C"
+    correct: "Follemente"
   },
   {
     number: 7,
@@ -75,7 +75,7 @@ const STORE = [
       C: "Modern",
       D: "Romantic"
     },
-    correct: "B"
+    correct: "Baroque"
   },
   {
     number: 8,
@@ -86,7 +86,7 @@ const STORE = [
       C: "Igor Stravinsky",
       D: "John Philip Sousa"
     },
-    correct: "A"
+    correct: "Johann Sebastian Bach"
   },
   {
     number: 9,
@@ -97,19 +97,19 @@ const STORE = [
       C: "48",
       D: "OVER 9000!!!!!!!"
     },
-    correct: "B"
+    correct: "9"
   },
   {
     number: 10,
     question:
-      "Which one of these instruments was used primarily in the band Jethro Tull?",
+      "Which one of these instruments was used excessively in the band Jethro Tull?",
     answers: {
       A: "Clarinet",
       B: "Chainsaw",
       C: "Flute",
       D: "Flamethrower"
     },
-    correct: "C"
+    correct: "Flute"
   }
 ];
 
