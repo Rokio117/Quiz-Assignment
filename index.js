@@ -22,6 +22,7 @@ function handleContinue() {
       $("#page-3").toggleClass("hidden");
       $("#page-2").toggleClass("hidden");
     } else {
+
       $("#page-3").toggleClass("hidden");
       $("#page-4").toggleClass("hidden");
     }
@@ -33,7 +34,7 @@ function handleContinue() {
 
 function showQuestionNumber() {
   $(".number-of-questions").text(STORE.length);
-  $("#final-score").text(STORE.length);
+  $("#final-score").text(userScore);
   $(".question-num").text(currentQuestion);
   //inputs the current question number into the 'question _ of 10 span
 }
