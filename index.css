@@ -5,24 +5,24 @@ html {
   background-position: center;
 }
 body {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
 }
 main {
   padding: 10px;
   height: 1000px;
 }
 header {
-  font-size: 100px;
+  font-size: 50px;
 }
 #reset-and-num-display {
-  display:flex;
+  display: flex;
   justify-content: space-around;
 }
-#reset-button,#number-display{
+#reset-button,
+#number-display {
   box-sizing: border-box;
   width: auto;
   height: 60px;
@@ -31,59 +31,72 @@ header {
   padding: 5px;
 }
 
-#question-num-display,#score-num-display {
+#question-num-display,
+#score-num-display {
   font-size: 20px;
 }
 
-#intro-quote,header {
+#intro-quote,
+header {
   margin: 20px;
 }
 #intro-greeting {
   height: 75%;
 }
-#intro-greeting,#main-interactive-area {
+#intro-greeting,
+#main-interactive-area {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#begin-button,.question-submit {
-  margin:15px;
+#begin-button,
+.question-submit {
+  margin: 15px;
   border: 5px solid black;
   padding: 20px;
 }
 
 #answer-area {
-display: flex;
-height:80%;
+  display: flex;
+  height: 80%;
 }
 #question-block {
-display: flex;
-width: 100%;
-text-align: start;
-border: none;
-
+  display: flex;
+  width: 100%;
+  text-align: start;
+  border: none;
 }
 .question {
   justify-content: center;
 }
-#main-interacStive-area,#feedback {
+#main-interacStive-area,
+#feedback {
   height: auto;
   display: flex;
   margin-top: 10px;
   flex-direction: column;
 }
 #feedback {
-  margin:30px;
+  margin: 30px;
 }
 .question-submit {
   align-self: center;
 }
-button:hover, input:hover, a:hover {
+button:hover,
+input:hover,
+a:hover {
   cursor: pointer;
   background-color: green;
 }
-.medium-font,.answer,button {
+.medium-font,
+.answer,
+button {
   font-size: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    font-size: 100px;
+  }
+}
